@@ -1,0 +1,572 @@
+﻿<DataModel name="New data model" formatVersion="13" modelVersion="2" defQuery="" id="b3d6e896-b0d3-4ef9-b54c-5d61075fe245">
+  <Description />
+  <CustomInfo />
+  <DMEOptions>
+    <listBoxTablesWidth>279</listBoxTablesWidth>
+    <FormWidth>880</FormWidth>
+    <FormHeight>617</FormHeight>
+  </DMEOptions>
+  <DBParams>
+    <SqlDialect>MySQL</SqlDialect>
+    <ConnectionString>Server=localhost;Port=3306;Database=cms;Uid=root;Pwd=faCV0512;SslMode=none</ConnectionString>
+    <LoginPrompt>False</LoginPrompt>
+    <GateClass>Korzh.EasyQuery.MySqlDataGate.MySqlGate</GateClass>
+  </DBParams>
+  <Tables>
+    <Table class="db" alias="access" schema="" db="cms" dsgnLayout="" priority="1000" name="access" hints="" quote="False" />
+    <Table class="db" alias="applications" schema="" db="cms" dsgnLayout="" priority="1000" name="applications" hints="" quote="False" />
+    <Table class="db" alias="category" schema="" db="cms" dsgnLayout="" priority="1000" name="category" hints="" quote="False" />
+    <Table class="db" alias="compras_funcionarios" schema="" db="cms" dsgnLayout="" priority="1000" name="compras_funcionarios" hints="" quote="False" />
+    <Table class="db" alias="menu" schema="" db="cms" dsgnLayout="" priority="1000" name="menu" hints="" quote="False" />
+    <Table class="db" alias="proyectos" schema="" db="cms" dsgnLayout="" priority="1000" name="proyectos" hints="" quote="False" />
+    <Table class="db" alias="proyectos_actividad" schema="" db="cms" dsgnLayout="" priority="1000" name="proyectos_actividad" hints="" quote="False" />
+    <Table class="db" alias="sucursales" schema="" db="cms" dsgnLayout="" priority="1000" name="sucursales" hints="" quote="False" />
+    <Table class="db" alias="sucursales_ads" schema="" db="cms" dsgnLayout="" priority="1000" name="sucursales_ads" hints="" quote="False" />
+    <Table class="db" alias="users" schema="" db="cms" dsgnLayout="" priority="1000" name="users" hints="" quote="False" />
+  </Tables>
+  <Links>
+    <Link table1="access" table2="applications" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="access" table2="category" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="access" table2="compras_funcionarios" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="access" table2="menu" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="access" table2="proyectos" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="access" table2="proyectos_actividad" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="access" table2="sucursales" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="access" table2="sucursales_ads" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="access" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="applications" table2="category" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="applications" table2="compras_funcionarios" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="applications" table2="menu" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="applications" table2="proyectos" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="applications" table2="proyectos_actividad" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="applications" table2="sucursales" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="applications" table2="sucursales_ads" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="applications" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="category" table2="compras_funcionarios" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="category" table2="menu" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="category" table2="proyectos" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="category" table2="proyectos_actividad" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="category" table2="sucursales" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="category" table2="sucursales_ads" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="category" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="compras_funcionarios" table2="menu" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="compras_funcionarios" table2="proyectos" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="compras_funcionarios" table2="proyectos_actividad" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="compras_funcionarios" table2="sucursales" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="compras_funcionarios" table2="sucursales_ads" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="compras_funcionarios" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="menu" table2="proyectos" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="menu" table2="proyectos_actividad" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="menu" table2="sucursales" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="menu" table2="sucursales_ads" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="menu" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="proyectos" table2="proyectos_actividad" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="proyectos" table2="sucursales" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="proyectos" table2="sucursales_ads" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="proyectos" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="proyectos_actividad" table2="sucursales" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="proyectos_actividad" table2="sucursales_ads" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="ID" op="=" />
+    </Link>
+    <Link table1="proyectos_actividad" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="id" expr2="id" op="=" />
+    </Link>
+    <Link table1="sucursales" table2="sucursales_ads" type="Inner" QF="False">
+      <Condition type="FF" expr1="ID" expr2="ID" op="=" />
+    </Link>
+    <Link table1="sucursales" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="ID" expr2="id" op="=" />
+    </Link>
+    <Link table1="sucursales_ads" table2="users" type="Inner" QF="False">
+      <Condition type="FF" expr1="ID" expr2="id" op="=" />
+    </Link>
+  </Links>
+  <Editors>
+    <Editor id="_DTE" type="EDIT" resType="String" defValue="" />
+    <Editor id="_DPDE" type="DATETIME" resType="Unknown" subType="Date" />
+    <Editor id="_DPTE" type="DATETIME" resType="Unknown" subType="Time" />
+  </Editors>
+  <Operators>
+    <Operator id="Equal" caption="is equal to" expr="{expr1} = {expr2}" format="{expr1} [[is equal to]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="NotEqual" caption="is not equal to" expr="{expr1} &lt;&gt; {expr2}" format="{expr1} [[is not equal to]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="LessThan" caption="is less than" expr="{expr1} &lt; {expr2}" format="{expr1} [[is less than]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="LessOrEqual" caption="is less than or equal to" expr="{expr1} &lt;= {expr2}" format="{expr1} [[is less than or equal to]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="GreaterThan" caption="is greater than" expr="{expr1} &gt; {expr2}" format="{expr1} [[is greater than]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="GreaterOrEqual" caption="is greater than or equal to" expr="{expr1} &gt;= {expr2}" format="{expr1} [[is greater than or equal to]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="IsNull" caption="is null" expr="{expr1} IS NULL" format="{expr1} [[is null]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="IsNotNull" caption="is not null" expr="{expr1} IS NOT NULL" format="{expr1} [[is not null]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="IsTrue" caption="is true" expr="{expr1} = ${true}" format="{expr1} [[is true]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Boolean operators" cond="False">
+      <Types>Bool</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="NotTrue" caption="is not true" expr="(({expr1} &lt;&gt; ${true}) OR ({expr1} IS NULL))" format="{expr1} [[is not true]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Boolean operators" cond="False">
+      <Types>Bool</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="InList" caption="is in list" expr="{expr1} in ({expr2})" format="{expr1} [[is in list]] {expr2}" constFmt="{const}" kind="List" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="NotInList" caption="is not in list" expr="NOT ({expr1} in ({expr2}))" format="{expr1} [[is not in list]] {expr2}" constFmt="{const}" kind="List" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="Between" caption="is between" expr="{expr1} BETWEEN {expr2} AND {expr3}" format="{expr1} [[is between]] {expr2} and {expr3}" constFmt="{const}" kind="Scalar" isRange="True" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="NotBetween" caption="is not between" expr="NOT ({expr1} BETWEEN {expr2} AND {expr3})" format="{expr1} [[is not between]] {expr2} and {expr3}" constFmt="{const}" kind="Scalar" isRange="True" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="StartsWith" caption="starts with" expr="{expr1} LIKE {expr2}" format="{expr1} [[starts with]] {expr2}" constFmt="{const}{ws}" kind="Scalar" caseIns="False" editor="_DTE" group="String operators" cond="False">
+      <Types>String,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="NotStartsWith" caption="does not start with" expr="NOT ({expr1} LIKE {expr2})" format="{expr1} [[does not start with]] {expr2}" constFmt="{const}{ws}" kind="Scalar" caseIns="False" editor="_DTE" group="String operators" cond="False">
+      <Types>String,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="Contains" caption="contains" expr="{expr1} LIKE {expr2}" format="{expr1} [[contains]] {expr2}" constFmt="{ws}{const}{ws}" kind="Scalar" caseIns="False" editor="_DTE" group="String operators" cond="False">
+      <Types>String,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="NotContains" caption="does not contain" expr="NOT ({expr1} LIKE {expr2})" format="{expr1} [[does not contain]] {expr2}" constFmt="{ws}{const}{ws}" kind="Scalar" caseIns="False" editor="_DTE" group="String operators" cond="False">
+      <Types>String,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="InSubQuery" caption="in sub query" expr="{expr1} IN ({expr2})" format="{expr1} [[in sub query]] {expr2}" constFmt="{const}" kind="Query" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="NotInSubQuery" caption="not in sub query" expr="NOT ({expr1} IN ({expr2}))" format="{expr1} [[is not in sub query]] {expr2}" constFmt="{const}" kind="Query" caseIns="False" group="Common operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="DateWithinToday" caption="today" expr="${{Today}} &lt;= {expr1} AND {expr1} &lt; ${{Tomorrow}}" format="{expr1} [[within today]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="DateWithinThisWeek" caption="this week" expr="${{FirstDayOfWeek}} &lt;= {expr1} AND {expr1} &lt; ${{FirstDayOfNextWeek}}" format="{expr1} [[within this week]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="DateWithinPrevWeek" caption="last week" expr="${{FirstDayOfPrevWeek}} &lt;= {expr1} AND {expr1} &lt; ${{FirstDayOfWeek}}" format="{expr1} [[within last week]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="DateWithinThisMonth" caption="this month" expr="${{FirstDayOfMonth}} &lt;= {expr1} AND {expr1} &lt; ${{FirstDayOfNextMonth}}" format="{expr1} [[within this month]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="DateWithinPrevMonth" caption="previous month" expr="${{FirstDayOfPrevMonth}} &lt;= {expr1} AND {expr1} &lt; ${{FirstDayOfMonth}}" format="{expr1} [[within previous month]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="DateWithinThisYear" caption="this year" expr="${{FirstDayOfYear}} &lt;= {expr1} AND {expr1} &lt; ${{FirstDayOfNextYear}}" format="{expr1} [[within this year]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="DateWithinPrevYear" caption="last year" expr="${{FirstDayOfPrevYear}} &lt;= {expr1} AND {expr1} &lt; ${{FirstDayOfYear}}" format="{expr1} [[within last year]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+    <Operator id="DateBeforePrecise" caption="before" expr="{expr1} &lt; {expr2}" format="{expr1} [[before]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" editor="_DPDE" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" defDefValue="${Today}" />
+    </Operator>
+    <Operator id="DateAfterPrecise" caption="after" expr="{expr1} &gt;= {expr2}" format="{expr1} [[after]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" editor="_DPDE" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" defDefValue="${FirstDayOfMonth}" />
+    </Operator>
+    <Operator id="DatePeriodPrecise" caption="custom period" expr="{expr1} BETWEEN {expr2} AND {expr3}" format="{expr1} [[within]] {expr2} and {expr3}" constFmt="{const}" kind="Scalar" isRange="True" caseIns="False" editor="_DPDE" group="Date/time operators" cond="False">
+      <Types>Date,DateTime</Types>
+      <Operands defType="Unknown" defDefValue="${Today}">
+        <Operand type="Unknown" kind="Scalar" defVal="${FirstDayOfMonth}" />
+        <Operand type="Unknown" kind="Scalar" defVal="${Today}" />
+      </Operands>
+    </Operator>
+    <Operator id="TimeBeforePrecise" caption="before" expr="{expr1} &lt; {expr2}" format="{expr1} [[before]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" editor="_DPTE" group="Date/time operators" cond="False">
+      <Types>Time</Types>
+      <Operands defType="Unknown" defDefValue="${Now}" />
+    </Operator>
+    <Operator id="TimeAfterPrecise" caption="after" expr="{expr1} &gt;= {expr2}" format="{expr1} [[after]] {expr2}" constFmt="{const}" kind="Scalar" caseIns="False" editor="_DPTE" group="Date/time operators" cond="False">
+      <Types>Time</Types>
+      <Operands defType="Unknown" defDefValue="${HourStart}" />
+    </Operator>
+    <Operator id="TimePeriodPrecise" caption="between" expr="{expr1} BETWEEN {expr2} AND {expr3}" format="{expr1} [[between]] {expr2} and {expr3}" constFmt="{const}" kind="Scalar" isRange="True" caseIns="False" editor="_DPTE" group="Date/time operators" cond="False">
+      <Types>Time</Types>
+      <Operands defType="Unknown" defDefValue="${Today}">
+        <Operand type="Unknown" kind="Scalar" defVal="${HourStart}" />
+        <Operand type="Unknown" kind="Scalar" defVal="${Now}" />
+      </Operands>
+    </Operator>
+    <Operator id="MaximumOfAttr" caption="is maximum of" expr="{expr1} = (SELECT MAX({expr2.field}) FROM {expr2.table})" format="{expr1} [[is equal to maximum of]] {expr2}" constFmt="{const}" kind="Attribute" caseIns="False" group="Other operators" cond="False">
+      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar,Date,DateTime,Time</Types>
+      <Operands defType="Unknown" />
+    </Operator>
+  </Operators>
+  <Entities maxId="0">
+    <Entity id="" name="access" UIC="True" UIR="True" UIS="True">
+      <Attr id="access.id" kind="Data" expr="id" caption="id" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="access">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="access.id_usuario" kind="Data" expr="id_usuario" caption="id_usuario" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="access">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="access.id_aplicacion" kind="Data" expr="id_aplicacion" caption="id_aplicacion" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="access">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="applications" UIC="True" UIR="True" UIS="True">
+      <Attr id="applications.id" kind="Data" expr="id" caption="id" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="applications">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="applications.nombre" kind="Data" expr="nombre" caption="nombre" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="applications">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="applications.ruta" kind="Data" expr="ruta" caption="ruta" type="String" size="200" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="applications">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="applications.estado" kind="Data" expr="estado" caption="estado" type="String" size="10" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="applications">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="applications.tipo" kind="Data" expr="tipo" caption="tipo" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="applications">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="applications.category" kind="Data" expr="category" caption="category" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="applications">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="category" UIC="True" UIR="True" UIS="True">
+      <Attr id="category.id" kind="Data" expr="id" caption="id" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="category">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="category.nombre" kind="Data" expr="nombre" caption="nombre" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="category">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="category.estado" kind="Data" expr="estado" caption="estado" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="category">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="compras_funcionarios" UIC="True" UIR="True" UIS="True">
+      <Attr id="compras_funcionarios.id" kind="Data" expr="id" caption="id" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.vendedor" kind="Data" expr="vendedor" caption="vendedor" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.nombre_vendedor" kind="Data" expr="nombre_vendedor" caption="nombre_vendedor" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.cargo_vendedor" kind="Data" expr="cargo_vendedor" caption="cargo_vendedor" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.cod_sucursal" kind="Data" expr="cod_sucursal" caption="cod_sucursal" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.nombre_sucursal" kind="Data" expr="nombre_sucursal" caption="nombre_sucursal" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.nombre_comprador" kind="Data" expr="nombre_comprador" caption="nombre_comprador" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.cargo_comprador" kind="Data" expr="cargo_comprador" caption="cargo_comprador" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.depto" kind="Data" expr="depto" caption="depto" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.monto_venta" kind="Data" expr="monto_venta" caption="monto_venta" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="compras_funcionarios.monto_descuento" kind="Data" expr="monto_descuento" caption="monto_descuento" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="compras_funcionarios">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="menu" UIC="True" UIR="True" UIS="True">
+      <Attr id="menu.id" kind="Data" expr="id" caption="id" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="menu.nombre" kind="Data" expr="nombre" caption="nombre" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="menu.idpadre" kind="Data" expr="idpadre" caption="idpadre" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="menu.permisos" kind="Data" expr="permisos" caption="permisos" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="menu.aplicacion" kind="Data" expr="aplicacion" caption="aplicacion" type="String" size="30" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="menu.activo" kind="Data" expr="activo" caption="activo" type="String" size="10" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="menu.ubicacion" kind="Data" expr="ubicacion" caption="ubicacion" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="menu.posicion" kind="Data" expr="posicion" caption="posicion" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="menu.descripcion" kind="Data" expr="descripcion" caption="descripcion" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="menu">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="proyectos" UIC="True" UIR="True" UIS="True">
+      <Attr id="proyectos.id" kind="Data" expr="id" caption="id" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.nombre_proyecto" kind="Data" expr="nombre_proyecto" caption="nombre_proyecto" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.descripcion" kind="Data" expr="descripcion" caption="descripcion" type="Blob" size="65535" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators />
+      </Attr>
+      <Attr id="proyectos.fecha_inicio" kind="Data" expr="fecha_inicio" caption="fecha_inicio" type="Date" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>DateWithinToday,DateWithinThisWeek,DateWithinPrevWeek,DateWithinThisMonth,DateWithinPrevMonth,DateWithinThisYear,DateWithinPrevYear,DateBeforePrecise,DateAfterPrecise,DatePeriodPrecise,MaximumOfAttr,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.fecha_termino" kind="Data" expr="fecha_termino" caption="fecha_termino" type="Date" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>DateWithinToday,DateWithinThisWeek,DateWithinPrevWeek,DateWithinThisMonth,DateWithinPrevMonth,DateWithinThisYear,DateWithinPrevYear,DateBeforePrecise,DateAfterPrecise,DatePeriodPrecise,MaximumOfAttr,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.costo" kind="Data" expr="costo" caption="costo" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.gasto" kind="Data" expr="gasto" caption="gasto" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.avance" kind="Data" expr="avance" caption="avance" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.nombre_reponsable" kind="Data" expr="nombre_reponsable" caption="nombre_reponsable" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.rut_responsable" kind="Data" expr="rut_responsable" caption="rut_responsable" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos.status" kind="Data" expr="status" caption="status" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="proyectos_actividad" UIC="True" UIR="True" UIS="True">
+      <Attr id="proyectos_actividad.id" kind="Data" expr="id" caption="id" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.id_proyecto" kind="Data" expr="id_proyecto" caption="id_proyecto" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.id_actividad" kind="Data" expr="id_actividad" caption="id_actividad" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.codigo" kind="Data" expr="codigo" caption="codigo" type="String" size="50" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.nombre" kind="Data" expr="nombre" caption="nombre" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.fecha_inicio" kind="Data" expr="fecha_inicio" caption="fecha_inicio" type="Date" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>DateWithinToday,DateWithinThisWeek,DateWithinPrevWeek,DateWithinThisMonth,DateWithinPrevMonth,DateWithinThisYear,DateWithinPrevYear,DateBeforePrecise,DateAfterPrecise,DatePeriodPrecise,MaximumOfAttr,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.fecha_termino" kind="Data" expr="fecha_termino" caption="fecha_termino" type="Date" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>DateWithinToday,DateWithinThisWeek,DateWithinPrevWeek,DateWithinThisMonth,DateWithinPrevMonth,DateWithinThisYear,DateWithinPrevYear,DateBeforePrecise,DateAfterPrecise,DatePeriodPrecise,MaximumOfAttr,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.costo" kind="Data" expr="costo" caption="costo" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.gasto" kind="Data" expr="gasto" caption="gasto" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.usuario_responsable" kind="Data" expr="usuario_responsable" caption="usuario_responsable" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="proyectos_actividad.avance" kind="Data" expr="avance" caption="avance" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="proyectos_actividad">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="sucursales" UIC="True" UIR="True" UIS="True">
+      <Attr id="sucursales.ID" kind="Data" expr="ID" caption="ID" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales.COD_SUCURSAL" kind="Data" expr="COD_SUCURSAL" caption="COD_SUCURSAL" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales.SUCURSAL" kind="Data" expr="SUCURSAL" caption="SUCURSAL" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales.ZONA" kind="Data" expr="ZONA" caption="ZONA" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales.PAIS" kind="Data" expr="PAIS" caption="PAIS" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales.SUCURSAL_ALT" kind="Data" expr="SUCURSAL_ALT" caption="SUCURSAL_ALT" type="String" size="255" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="sucursales_ads" UIC="True" UIR="True" UIS="True">
+      <Attr id="sucursales_ads.ID" kind="Data" expr="ID" caption="ID" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales_ads">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales_ads.COD_SUCURSAL" kind="Data" expr="COD_SUCURSAL" caption="COD_SUCURSAL" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales_ads">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales_ads.DIRECCION" kind="Data" expr="DIRECCION" caption="DIRECCION" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales_ads">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales_ads.NODO_PRIMARIO" kind="Data" expr="NODO_PRIMARIO" caption="NODO_PRIMARIO" type="String" size="200" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales_ads">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales_ads.IP_PRIMARIO" kind="Data" expr="IP_PRIMARIO" caption="IP_PRIMARIO" type="String" size="200" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales_ads">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales_ads.NODO_SECUNDARIO" kind="Data" expr="NODO_SECUNDARIO" caption="NODO_SECUNDARIO" type="String" size="200" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales_ads">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="sucursales_ads.IP_SECUNDARIO" kind="Data" expr="IP_SECUNDARIO" caption="IP_SECUNDARIO" type="String" size="200" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="sucursales_ads">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+    <Entity id="" name="users" UIC="True" UIR="True" UIS="True">
+      <Attr id="users.id" kind="Data" expr="id" caption="id" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.{user}" kind="Data" expr="user" caption="user" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.pass" kind="Data" expr="pass" caption="pass" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.forename" kind="Data" expr="forename" caption="forename" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.paternal" kind="Data" expr="paternal" caption="paternal" type="String" size="1000" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.maternal" kind="Data" expr="maternal" caption="maternal" type="String" size="1000" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.cellphone" kind="Data" expr="cellphone" caption="cellphone" type="String" size="18" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.permits" kind="Data" expr="permits" caption="permits" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.email" kind="Data" expr="email" caption="email" type="String" size="100" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.status" kind="Data" expr="status" caption="status" type="String" size="10" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.business" kind="Data" expr="business" caption="business" type="String" size="1000" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>StartsWith,Contains,Equal,InList,NotStartsWith,NotContains,NotEqual,NotInList,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+      <Attr id="users.cod_sucursal" kind="Data" expr="cod_sucursal" caption="cod_sucursal" type="Int" size="0" UIC="True" UIR="True" UIS="True" customFunc="" quote="False" UAL="True" aggr="False" tables="users">
+        <Operators>Equal,Between,LessThan,LessOrEqual,GreaterThan,GreaterOrEqual,InList,NotEqual,NotBetween,NotInList,MaximumOfAttr,InSubQuery,NotInSubQuery,IsNull,IsNotNull</Operators>
+      </Attr>
+    </Entity>
+  </Entities>
+</DataModel>
