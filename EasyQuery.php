@@ -16,7 +16,7 @@
 		public static $DB_HOST='localhost';
 		public static $DB_PORT='3306';
 		public static $DB_USER='root';
-		public static $DB_PASSWD='12345678';
+		public static $DB_PASSWD='faCV0512';
 	}
 	
 	
@@ -94,6 +94,8 @@
 	}
 	
 	function buildSql($query_json) {
+
+
 		/*
 		//send a request to the REST web-service	
 		$url = config::$SQBAPI_HOST.'api/2.0/SqlQueryBuilder';
@@ -129,7 +131,10 @@
 		}
 		*/
 		//Create sql
-		return "SELECT * FROM applications";
+		//return "SELECT * FROM applications";
+
+		//$query = json_decode($query_json);
+		return $query_json;
 	}
 
 	function getXmlModel($modelId){
@@ -272,4 +277,8 @@
 	}
 	else
 		echo '{"result": "OK"}';
+
+	function decodeQueryJson($query_json){
+		return json_decode($query_json);
+	}
 ?>
