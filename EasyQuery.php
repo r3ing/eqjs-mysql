@@ -16,7 +16,7 @@
 		public static $DB_HOST='localhost';
 		public static $DB_PORT='3306';
 		public static $DB_USER='root';
-		public static $DB_PASSWD='faCV0512';
+		public static $DB_PASSWD='12345678';
 	}
 	
 	

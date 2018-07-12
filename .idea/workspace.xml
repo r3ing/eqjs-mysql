@@ -2,44 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0b32313-321b-4ff7-aad9-54e04ce26912" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/eqjs-mysql.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EasyQuery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LastQuery.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ModelID.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ModelID.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QueryBuilder.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/css/easychart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/css/easychart.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/css/easyquery.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/css/easyquery.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/css/eq-icons-default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/css/eq-icons-default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/css/eqview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/css/eqview.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/easychart.chartjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/easychart.chartjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/easychart.google.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/easychart.google.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/easychart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/easychart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.basic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.basic.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.grid.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.report.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.textsearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/eqjs/js/eq.view.textsearch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gstatic/loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jquey/jquery-1.10.2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jquey/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jquey/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/EasyQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QueryBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/QueryBuilder.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +18,17 @@
       <file leaf-file-name="QueryBuilder.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QueryBuilder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="91" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
+            <state relative-caret-position="468">
+              <caret line="439" column="3" selection-start-line="439" selection-start-column="3" selection-end-line="439" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EasyQuery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EasyQuery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -67,6 +41,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/EasyQuery.php" />
         <option value="$PROJECT_DIR$/QueryBuilder.html" />
       </list>
     </option>
@@ -133,16 +108,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531406136843</updated>
-      <workItem from="1531406139355" duration="99000" />
+      <workItem from="1531406139355" duration="2600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99000" />
+    <option name="totallyTimeSpent" value="2600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -172,10 +146,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/EasyQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/QueryBuilder.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="91" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
+        <state relative-caret-position="468">
+          <caret line="439" column="3" selection-start-line="439" selection-start-column="3" selection-end-line="439" selection-end-column="3" />
         </state>
       </provider>
     </entry>
