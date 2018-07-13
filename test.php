@@ -20,6 +20,8 @@ function getDataJson($json){
     //value $c->value
     //dataType $c->type
 
+    $tables = array();
+
     foreach ($json as $k => $v) {
 
         //conditions
@@ -79,6 +81,8 @@ function getDataJson($json){
                                $column->func = '';
                                $columns->append($column);
                                $column = new stdClass();
+                               $t = explode('.', $v);
+                               array_push($tables, $t[0]);
                            }
 
                            if ($k == 'func') {
@@ -90,6 +94,8 @@ function getDataJson($json){
                                         $column->col = $v;
                                         $columns->append($column);
                                         $column = new stdClass();
+                                        $t = explode('.', $v);
+                                        array_push($tables, $t[0]);
                                     }
                                }
                            }
@@ -100,4 +106,39 @@ function getDataJson($json){
        }
     }
 
+    createQuery($columns, $conditions, $tables);
+}
+
+function createQuery($colums, $conditions, $tables){
+
+    $query = '';
+    $orderBy = '';//.
+
+    foreach($colums as $c){
+
+        if($c->func != ''){
+
+        }
+
+        if($c->sort != ''){
+            if(!empty($orderBy))
+                $orderBy = $orderBy . ', ';
+            $orderBy = $orderBy . $c->col . ' ' . $c->sort ;
+        }
+
+        //column $c->col
+        //order by $c->sort
+        //function $c->func
+
+    }
+
+
+    foreach($tables as $t)
+        echo $t;
+
+$orderBy = 'ORDER BY '.$orderBy;
+    //echo $orderBy;
+
+
+    return '';
 }

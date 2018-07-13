@@ -1,0 +1,28 @@
+{"root":{"linkType":"All","enabled":true,"conditions":[]},"columns":[],"justsorted":[],"id":"Y118-M6-D5-H15-M0-S38-MS836-3502","modelId":"b3d6e896-b0d3-4ef9-b54c-5d61075fe245","modelName":"New data model"}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3 columns con functions y order by
+
+{"root":{"linkType":"All","enabled":true,"conditions":[]},"columns":[{"caption":"applications id Count","sorting":"None","sortIndex":-1,"expr":{"func":"COUNT","distinct":false,"typeName":"AGGRFUNC","argument":{"typeName":"ENTATTR","id":"applications.id"}},"params":[],"blockId":"ColumnsPanel-col-4"},{"caption":"category nombre Count","sorting":"Descending","sortIndex":1,"expr":{"func":"COUNT","distinct":false,"typeName":"AGGRFUNC","argument":{"typeName":"ENTATTR","id":"category.nombre"}},"params":[],"blockId":"ColumnsPanel-col-5"},{"caption":"menu idpadre Average","sorting":"Ascending","sortIndex":2,"expr":{"func":"AVG","distinct":false,"typeName":"AGGRFUNC","argument":{"typeName":"ENTATTR","id":"menu.idpadre"}},"params":[],"blockId":"ColumnsPanel-col-6"}],"justsorted":[],"id":"Y118-M6-D5-H15-M0-S38-MS836-3502","modelId":"b3d6e896-b0d3-4ef9-b54c-5d61075fe245","modelName":"New data model"}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2 columns con una function y un order by
+
+
+{"root":{"linkType":"All","enabled":true,"conditions":[]},"columns":[{"caption":"applications nombre","sorting":"Ascending","sortIndex":0,"expr":{"typeName":"ENTATTR","id":"applications.nombre"},"params":[],"blockId":"ColumnsPanel-col-1"},{"caption":"category estado Sum","sorting":"None","sortIndex":-1,"expr":{"func":"SUM","distinct":false,"typeName":"AGGRFUNC","argument":{"typeName":"ENTATTR","id":"category.estado"}},"params":[],"blockId":"ColumnsPanel-col-2"}],"justsorted":[],"id":"Y118-M6-D5-H15-M0-S38-MS836-3502","modelId":"b3d6e896-b0d3-4ef9-b54c-5d61075fe245","modelName":"New data model"}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3 columns con function,sin order by, y con conditions
+
+{"root":{"linkType":"All","enabled":true,"conditions":[{"justAdded":false,"typeName":"SMPL","enabled":true,"operatorID":"Equal","expressions":[{"kind":"Attribute","typeName":"ENTATTR","id":"applications.id"},{"typeName":"CONST","dataType":"Int","kind":"Scalar","value":"10","text":"10"}],"blockId":"QueryPanel-cond-1"},{"justAdded":false,"typeName":"SMPL","enabled":true,"operatorID":"StartsWith","expressions":[{"kind":"Attribute","typeName":"ENTATTR","id":"applications.nombre"},{"typeName":"CONST","dataType":"String","kind":"Scalar","value":"qwerty","text":"qwerty"}],"blockId":"QueryPanel-cond-2"}]},"columns":[{"caption":"applications id","sorting":"None","sortIndex":-1,"expr":{"typeName":"ENTATTR","id":"applications.id"},"params":[],"blockId":"ColumnsPanel-col-1"},{"caption":"applications nombre Count","sorting":"None","sortIndex":-1,"expr":{"func":"COUNT","distinct":false,"typeName":"AGGRFUNC","argument":{"typeName":"ENTATTR","id":"applications.nombre"}},"params":[],"blockId":"ColumnsPanel-col-2"}],"justsorted":[],"id":"Y118-M6-D4-H16-M4-S30-MS356-5935","modelId":"b3d6e896-b0d3-4ef9-b54c-5d61075fe245","modelName":"New data model"}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1 column con 2 condiciones una enabley otra disable y otra sin valor
+
+{"root":{"linkType":"All","enabled":true,"conditions":[{"justAdded":false,"typeName":"SMPL","enabled":false,"operatorID":"Equal","expressions":[{"kind":"Attribute","typeName":"ENTATTR","id":"applications.id"},{"typeName":"CONST","dataType":"Int","kind":"Scalar","value":"","text":""}],"blockId":"QueryPanel-cond-3"},{"justAdded":false,"typeName":"SMPL","enabled":true,"operatorID":"StartsWith","expressions":[{"kind":"Attribute","typeName":"ENTATTR","id":"applications.ruta"},{"typeName":"CONST","dataType":"String","kind":"Scalar","value":"123","text":"123"}],"blockId":"QueryPanel-cond-4"},{"justAdded":false,"typeName":"SMPL","enabled":true,"operatorID":"StartsWith","expressions":[{"kind":"Attribute","typeName":"ENTATTR","id":"applications.estado"},{"typeName":"CONST","dataType":"String","kind":"Scalar","value":"","text":""}],"blockId":"QueryPanel-cond-5"}]},"columns":[{"caption":"applications nombre","sorting":"None","sortIndex":-1,"expr":{"typeName":"ENTATTR","id":"applications.nombre"},"params":[],"blockId":"ColumnsPanel-col-13"}],"justsorted":[],"id":"Y118-M6-D5-H15-M0-S38-MS836-3502","modelId":"b3d6e896-b0d3-4ef9-b54c-5d61075fe245","modelName":"New data model"}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+SELECT DISTINCT Customers.CompanyName, Order_Details.UnitPrice, Products.QuantityPerUnit FROM (((Customers INNER JOIN Orders ON (Customers.CustomerID = Orders.CustomerID ))      INNER JOIN Order_Details AS Order_Details ON (Orders.OrderID  = Order_Details.OrderID ))      INNER JOIN Products AS Products ON (Products.ProductID  = Order_Details.ProductID ))
+
+fucnt: Distinct count  CNTDST     COUNT(DISTINCT Country)       o     DISTINCT  COUNT(country)
