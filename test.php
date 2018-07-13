@@ -1,88 +1,54 @@
 <?php
 
-
-/*
-$json = json_decode(json_encode($json, true));
-
-$jsonIterator = new RecursiveIteratorIterator(
-    new RecursiveArrayIterator(json_decode(json_encode(file_get_contents("querys.json"), true))),
-    RecursiveIteratorIterator::SELF_FIRST);
-foreach ($jsonIterator as $key => $val) {
-    echo $val ."\n";
-
-    if(is_array($val)) {
-        //echo "$key:\n";
-    } else {
-        //echo "$key => $val\n";
-    }
-}
-
-$json = json_decode(json_encode(file_get_contents("querys.json"), true));//json_decode(file_get_contents("querys.json"), true); //;//
-
-foreach($json as $key => $value) {
-    echo $value->root;
-}
-*/
-
-
 $jsonData = file_get_contents("querys.json");
 $json = json_decode($jsonData, true);
 
 getDataJson($json);
 
-
-/*
-foreach($json as $key => $val) {
-    if(is_array($val)) {
-        echo "$key:\n";
-    } else {
-        echo "$key => $val\n";
-    }
-}
-*/
-
-//echo $json['root'][0];
-
-/*
-foreach ($json as $key => $value) {
-    if (!is_array($value)) {
-        echo $key . '=>' . $value . '<br/>';
-    } else {
-        foreach ($value as $key => $val) {
-            echo $key . '=>' . $val . '<br/>';
-        }
-    }
-}
-*/
-
-
 function getDataJson($json){
 
-    $columns = array();
+    $columns = new ArrayObject();
     $column = new stdClass();
+    //column $c->col
+    //order by $c->sort
+    //function $c->func
 
-    foreach ($json as $key => $value) {
-        if ($key == "columns") {
-            if (is_array($value)) {
-                foreach ($value as $col => $valCol) {
-                    foreach ($valCol as $col => $valCol) {
-                        if($col == 'expr'){
-                            foreach ($valCol as $k => $v) {
-                                if ($k == "id") {
-                                    $column->col = $v;
-                                    $column->func = "";
-                                    array_push($columns, $column);
-                                }
-                                if ($k == "func") {
-                                    $column->func = $v;
-                                }
-                                if ($k == "argument") {
-                                    foreach ($v as $k1 => $v1) {
-                                         if($k1 == "id"){
-                                             $column->col = $v1;
-                                         }
+    $conditions = new ArrayObject();
+    $condition = new stdClass();
+    //column $c->col
+    //where $c->oper
+    //value $c->value
+    //dataType $c->type
+
+    foreach ($json as $k => $v) {
+
+        //conditions
+        if($k == 'root'){
+            foreach ($v as $k => $v) {
+                if($k == 'conditions' && sizeof($v) > 0){
+                    foreach ($v as $k => $v) {
+                        foreach ($v as $k => $v) {
+                            if($k == 'enabled' && !$v){
+                                break;
+                            }
+                            if($k == 'operatorID'){
+                                $condition->oper = $v;
+                            }
+                            if($k == 'expressions'){
+                                foreach ($v as $k => $v) {
+                                    foreach ($v as $k => $v) {
+                                        if ($k == 'id') {
+                                            $condition->col = $v;
+                                        }
+                                        if ($k == 'dataType') {
+                                            $condition->type = $v;
+                                        }
+                                        if ($k == 'value') {
+                                            $condition->value = $v;
+                                            $conditions->append($condition);
+                                            $condition = new stdClass();
+                                        }
                                     }
-                                    array_push($columns, $column);
                                 }
                             }
                         }
@@ -90,54 +56,48 @@ function getDataJson($json){
                 }
             }
         }
-    }
 
-    echo sizeof($columns);
+       //columns
+       if ($k == 'columns' && sizeof($v) > 0) {
+           foreach ($v as $k => $v) {
+               foreach ($v as $k => $v) {
+                   if($k == 'sorting'){
+                       if ($v == 'Ascending'){
+                           $column->sort = 'ASC';
+                       }
+                       elseif ($v == 'Descending') {
+                           $column->sort = 'DESC';
+                       }
+                       else{
+                           $column->sort = '';
+                       }
+                   }
+                   if($k == 'expr'){
+                       foreach ($v as $k => $v) {
+                           if ($k == 'id') {
+                               $column->col = $v;
+                               $column->func = '';
+                               $columns->append($column);
+                               $column = new stdClass();
+                           }
 
-
-    foreach($columns as $c) {
-        echo $c->col . "  ". $c->func . '<br/>';
-    }
-/*
-      if (is_array($col)) {
-        foreach ($key1 as $key2 => $value2) {
-            if ($key2 == "id") {
-                array_push($columns, $value2);
-             }
-         }
+                           if ($k == 'func') {
+                               $column->func = $v;
+                           }
+                           if ($k == 'argument') {
+                               foreach ($v as $k => $v) {
+                                    if($k == 'id'){
+                                        $column->col = $v;
+                                        $columns->append($column);
+                                        $column = new stdClass();
+                                    }
+                               }
+                           }
+                       }
+                   }
+               }
+           }
        }
-
-
-                if (!is_array($value)) {
-                    echo $key . '=>' . $value . '<br/>';
-                } else {
-                    foreach ($value as $key => $value) {
-                        echo $key . '=>' . $value . '<br/>';
-                    }
-                }
-
-
-            /*
-            if (!is_array($value)) {
-                echo $key . '=>' . $value . '<br/>';
-            } else {
-                foreach ($value as $key => $val) {
-                    echo $key . '=>' . $val . '<br/>';
-                }
-            }*/
-
-
-
-/*
-    foreach($json as $key => $val) {
-        if(is_array($key)){
-            //echo "$key => $val". "<br>";
-            getDataJson($key as $keys);
-        }
-        else{
-            //echo "$key => $val". "<br>";
-        }
     }
-    */
 
 }
