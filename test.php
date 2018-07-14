@@ -134,7 +134,7 @@ function createQuery($colums, $conditions, $tables){
 
 
     foreach($tables as $t)
-        echo $t;
+        echo $t ." -- "."\n";
 
 $orderBy = 'ORDER BY '.$orderBy;
     //echo $orderBy;
