@@ -19,7 +19,6 @@
 		public static $DB_PASSWD='faCV0512';
 	}
 	
-	
 	function getTypeName($type) {
 		$types[1]='number';
 		$types[2]='number';
@@ -134,7 +133,16 @@
 		//return "SELECT * FROM applications";
 
 		//$query = json_decode($query_json);
-		return $query_json;
+        include 'operationsJson.php';
+
+        $jsonData = file_get_contents('querys.json');
+        $json = json_decode($jsonData, true);
+
+        return getDataJson($json);
+
+		//return $query_json;
+
+        //return getDataJson(json_decode($query_json, true));
 	}
 
 	function getXmlModel($modelId){

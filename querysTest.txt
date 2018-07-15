@@ -26,3 +26,18 @@
 SELECT DISTINCT Customers.CompanyName, Order_Details.UnitPrice, Products.QuantityPerUnit FROM (((Customers INNER JOIN Orders ON (Customers.CustomerID = Orders.CustomerID ))      INNER JOIN Order_Details AS Order_Details ON (Orders.OrderID  = Order_Details.OrderID ))      INNER JOIN Products AS Products ON (Products.ProductID  = Order_Details.ProductID ))
 
 fucnt: Distinct count  CNTDST     COUNT(DISTINCT Country)       o     DISTINCT  COUNT(country)
+
+------------------------------------------------------------------------------------------------
+
+SELECT * FROM applications
+
+SELECT id FROM applications WHERE id <> 1
+SELECT nombre FROM applications WHERE nombre IN ('e')
+SELECT nombre FROM applications WHERE NOT (id IN ('2', '3', '4'))
+SELECT nombre FROM applications WHERE nombre LIKE '%%'
+
+SELECT * FROM proyectos WHERE '2018-07-14' <= fecha_inicio AND fecha_inicio < '2018-07-15'    2018-03-01
+
+SELECT * FROM proyectos WHERE fecha_inicio < '2018-07-14'
+
+SELECT COUNT(DISTINCT applications.nombre), COUNT(category.estado), AVG(menu.id) FROM applications, category, menu WHERE applications.nombre LIKE '%qwerty%' AND category.estado BETWEEN 11 AND 22 AND menu.id > 33 ORDER BY applications.nombre ASC, menu.id DESC
