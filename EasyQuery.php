@@ -16,7 +16,7 @@
 		public static $DB_HOST='localhost';
 		public static $DB_PORT='3306';
 		public static $DB_USER='root';
-		public static $DB_PASSWD='faCV0512';
+		public static $DB_PASSWD='12345678';//'faCV0512';
 	}
 	
 	function getTypeName($type) {
@@ -91,59 +91,6 @@
 		}
 		return $mysqli->query($sql);
 	}
-	
-	function buildSql($query_json) {
-
-
-		/*
-		//send a request to the REST web-service	
-		$url = config::$SQBAPI_HOST.'api/2.0/SqlQueryBuilder';
-		$request_data = '{"modelId":"'.config::$MODEL_ID.'", "query":'.$query_json.'}';
-
-		//error_log($request_data);
-
-		$options = array(
-		    'http' => array(
-		        'header'  => "Content-type: application/json\r\nSQB-Key: ".config::$SQBAPI_KEY,
-		        'method'  => 'POST',
-		        'content' => $request_data,
-		    ),
-		);
-		$context  = stream_context_create($options);
-
-		$response = file_get_contents($url, false, $context);
-
-		//get a response in JSON format	
-		if ( $response !== FALSE) {
-			$res = json_decode($response, true); 	
-			
-			$sql = "";
-			//now we get an SQL statement by the query defined on client-side
-			if ($res != null && array_key_exists("sql", $res) )
-				$sql = $res["sql"]; 
-
-
-			return $sql;
-		}
-		else {
-			return 'ERROR';
-		}
-		*/
-		//Create sql
-		//return "SELECT * FROM applications";
-
-		//$query = json_decode($query_json);
-        include 'operationsJson.php';
-
-        $jsonData = file_get_contents('querys.json');
-        $json = json_decode($jsonData, true);
-
-        return getDataJson($json);
-
-		//return $query_json;
-
-        //return getDataJson(json_decode($query_json, true));
-	}
 
 	function getXmlModel($modelId){
 	//Get XML Model from SimpleQueryBuilder
@@ -175,6 +122,7 @@
 		$model = file_get_contents(config::$MODEL_FILE_JSON);
 		echo $model;
 	}
+	/*
 	else if ($action == 'loadQuery') {
 
 		//get query name
@@ -206,15 +154,17 @@
 		
 		echo '{"result":"OK"}';
 	}
+	*/
 	else if ($action == 'syncQuery') {
 		//return generated SQL to show it on our demo web-page. Not necessary to do in production!
 		$data = json_decode(file_get_contents('php://input'), true);
 
 		$queryJson = json_encode($data['query']);
 
-		$sql = buildSql($queryJson);	
+		include 'opJson.php';
 
-		$result = json_encode(array('statement' => $sql));
+		$result = json_encode(array('statement' => getDataJson(json_decode($queryJson, true))));
+
 		echo $result;
 	}
 	else if ($action == 'executeQuery') {
@@ -222,7 +172,9 @@
 		$data = json_decode(file_get_contents('php://input'), true);
 		
 		$query_json = json_encode($data['query']);
-		$sql = buildSql($query_json);
+
+		include 'opJson.php';
+		$sql = getDataJson(json_decode($query_json,true));
 		$result='{}';
 		$recordSet = executeSql($sql);
 		if ($recordSet)

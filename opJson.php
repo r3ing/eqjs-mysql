@@ -2,8 +2,7 @@
 
 //$jsonData = file_get_contents("querys.json");
 //$json = json_decode($jsonData, true);
-
-//echo getDataJson($json);
+//getDataJson($json);
 
 function getDataJson($json){
 
@@ -120,7 +119,9 @@ function getDataJson($json){
     }
 
     if(sizeof($columns) > 0)
-        createQuery($columns, $conditions, array_unique($tables));
+        return createQuery($columns, $conditions, array_unique($tables));
+    else
+        return '';
 }
 
 function createQuery($colums, $conditions, $tables){
@@ -427,7 +428,7 @@ function createQuery($colums, $conditions, $tables){
 
     $query = 'SELECT '. $select .' FROM '. $from . $where . $orderBy;  //' WHERE '. $where .' '. $orderBy;
 
-    echo $query;
+    return $query;
 }
 
 /*Verificar
