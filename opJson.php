@@ -1,9 +1,5 @@
 <?php
 
-//$jsonData = file_get_contents("querys.json");
-//$json = json_decode($jsonData, true);
-//getDataJson($json);
-
 function getDataJson($json){
 
     $columns = new ArrayObject();

@@ -122,39 +122,6 @@
 		$model = file_get_contents(config::$MODEL_FILE_JSON);
 		echo $model;
 	}
-	/*
-	else if ($action == 'loadQuery') {
-
-		//get query name
-		$data = json_decode(file_get_contents('php://input'), true);
-
-		$query_json = json_encode($data['query']);
-	
-        $query_name = $data['id'];
-
-		//read query from a file and return in response
-		$query_file_name = $query_name.".json";
-		$query_json = file_get_contents($query_file_name);
-
-		echo $query_json;
-	}
-	else if ($action == 'saveQuery') {
-
-		//get query in json format
-
-		$data = json_decode(file_get_contents('php://input'), true);
-		
-		//get query name
-		$query_name = $data['query']['id'];
-		
-		$query_json = json_encode($data['query']);
-		//save query to a file
-		$query_file_name = $query_name.".json";
-		file_put_contents($query_file_name, $query_json);
-		
-		echo '{"result":"OK"}';
-	}
-	*/
 	else if ($action == 'syncQuery') {
 		//return generated SQL to show it on our demo web-page. Not necessary to do in production!
 		$data = json_decode(file_get_contents('php://input'), true);
