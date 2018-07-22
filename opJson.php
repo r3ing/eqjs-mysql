@@ -35,8 +35,20 @@ function getDataJson($json){
                                 $values = sizeof($v);
                                 foreach ($v as $k => $v) {
                                     foreach ($v as $k => $v) {
+                                        /*
                                         if ($k == 'id')
                                             $condition->col = $v;
+                                        */
+                                        if ($k == 'id'){
+                                            if(empty($condition->col))
+                                                $condition->col = $v;
+                                            else{
+                                                $condition->value = $v;
+                                                $conditions->append($condition);
+                                                $condition = new stdClass();
+                                                break;
+                                            }
+                                        }
 
                                         if ($k == 'dataType') {
                                             if(!empty($condition->type))
@@ -434,4 +446,18 @@ function createQuery($colums, $conditions, $tables){
 /*Falta
  -InSubQuery: falta programar, crear los valores
  -NotInSubQuery: falta programar, crear los valores
+
+{
+  "id": "SubQuery",
+  "caption": "sub query",
+  "displayFormat": "{expr1} [[sub query]] {expr2}",
+  "isRange": false,
+  "caseIns": false,
+  "paramCount": 2,
+  "defaultOperand": {
+    "kind": "Attribute",
+    "dataType":"Unknown"
+  }
+
+
 */
