@@ -239,14 +239,6 @@
       <Types>String,Memo,FixedChar</Types>
       <Operands defType="Unknown" />
     </Operator>
-    <Operator id="InSubQuery" caption="in sub query" expr="{expr1} IN ({expr2})" format="{expr1} [[in sub query]] {expr2}" constFmt="{const}" kind="Query" caseIns="False" group="Common operators" cond="False">
-      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
-      <Operands defType="Unknown" />
-    </Operator>
-    <Operator id="NotInSubQuery" caption="not in sub query" expr="NOT ({expr1} IN ({expr2}))" format="{expr1} [[is not in sub query]] {expr2}" constFmt="{const}" kind="Query" caseIns="False" group="Common operators" cond="False">
-      <Types>String,Byte,Word,Int,Int32,Int64,Bool,Float,Currency,BCD,Autoinc,Memo,FixedChar</Types>
-      <Operands defType="Unknown" />
-    </Operator>
     <Operator id="DateWithinToday" caption="today" expr="${{Today}} &lt;= {expr1} AND {expr1} &lt; ${{Tomorrow}}" format="{expr1} [[within today]]" constFmt="{const}" kind="Scalar" caseIns="False" group="Date/time operators" cond="False">
       <Types>Date,DateTime</Types>
       <Operands defType="Unknown" />

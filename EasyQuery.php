@@ -16,7 +16,7 @@
 		public static $DB_HOST='localhost';
 		public static $DB_PORT='3306';
 		public static $DB_USER='root';
-		public static $DB_PASSWD='12345678';//'faCV0512';
+		public static $DB_PASSWD='faCV0512';//'12345678';
 	}
 	
 	function getTypeName($type) {
@@ -64,7 +64,7 @@
                     $rowData['c'][]=array("v"=> "Date(".substr($value,0,4).", ".substr($value,5,2).", ".substr($value,8,2).")");
 				}
                 else {
-                    $rowData['c'][]=array("v"=>$value);
+                    $rowData['c'][]=array("v"=>utf8_encode($value));
                 }
                 $col_index++;
 			}
